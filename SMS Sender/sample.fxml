@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #E71D36;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="101.0" layoutY="1.0" text="SMS SENDER" textFill="WHITE">
+         <font>
+            <Font name="AnjaliOldLipi Regular" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mobileNum" layoutX="53.0" layoutY="100.0" prefHeight="35.0" prefWidth="290.0" />
+      <TextArea fx:id="textMsg" layoutX="53.0" layoutY="175.0" prefHeight="250.0" prefWidth="290.0" />
+      <Button layoutX="53.0" layoutY="445.0" mnemonicParsing="false" onAction="#sendMsg" prefHeight="40.0" prefWidth="162.0" stylesheets="@custom.css" text="Send" />
+      <Label layoutX="53.0" layoutY="74.0" prefHeight="26.0" prefWidth="105.0" text="Mobile No" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="146.0" prefHeight="26.0" prefWidth="144.0" text="Text Message" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="223.0" layoutY="445.0" mnemonicParsing="false" onAction="#resetBtn" prefHeight="40.0" prefWidth="120.0" styleClass="resetButton" stylesheets="@custom.css" text="Reset" />
+   </children>
+</AnchorPane>
