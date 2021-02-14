@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button layoutX="183.0" layoutY="320.0" mnemonicParsing="false" onAction="#calculate" prefHeight="40.0" prefWidth="200.0" text="Convert" />
+      <ComboBox fx:id="comb" layoutX="186.0" layoutY="97.0" prefHeight="40.0" prefWidth="200.0" promptText="Select the type" />
+      <TextField fx:id="secondInput" layoutX="186.0" layoutY="223.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField fx:id="firstInput" layoutX="186.0" layoutY="161.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="farenhideLabel" layoutX="9.0" layoutY="161.0" prefHeight="40.0" prefWidth="174.0" text="Enter Temp. in Farenhide:" />
+      <Label layoutX="47.0" layoutY="14.0" text="Temperature Converter" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="celciusLabel" layoutX="9.0" layoutY="214.0" prefHeight="59.0" prefWidth="174.0" text="Temp. in Degree Celcius" wrapText="true" />
+      <Button layoutX="91.0" layoutY="320.0" mnemonicParsing="false" onAction="#resetBtn" prefHeight="40.0" prefWidth="76.0" text="Reset" />
+   </children>
+</AnchorPane>
